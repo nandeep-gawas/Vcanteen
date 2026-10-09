@@ -1,0 +1,116 @@
+Design Rules
+
+Goal
+
+Make the website feel like a real student-built product designed by a human designer, not an AI-generated landing page.
+
+Visual direction
+
+- Minimal
+- Editorial
+- Functional
+- High contrast
+- Spacious
+- Calm
+- Professional
+- Slightly technical
+
+Avoid
+
+- Purple/blue/pink gradient backgrounds
+- Neon glow effects
+- Decorative blurred circles
+- Excessive glassmorphism
+- Excessive rounded cards
+- Gradient text
+- Gradient borders
+- Excessive drop shadows
+- Random icons used as decoration
+- Floating cards everywhere
+- Excessive hover scaling
+- Confetti
+- Generic AI marketing language
+
+Colors
+
+Prefer:
+
+- near-black
+- warm white
+- neutral gray
+- one restrained accent color
+
+Use color to communicate meaning, not decoration.
+
+Typography
+
+Use strong typography and spacing rather than gradients or effects to create visual hierarchy.
+
+Headings should be confident and simple.
+
+Body text should be short, concrete and readable.
+
+Layout
+
+Prefer:
+
+- asymmetric layouts
+- editorial sections
+- lists
+- tables
+- thin dividers
+- generous whitespace
+- simple grids when appropriate
+
+Avoid generic:
+
+- three identical feature cards
+- icon + heading + paragraph repeated three times
+- floating glass cards
+- centered content everywhere
+
+Components
+
+Components should have a clear functional reason to exist.
+
+Do not add an icon simply because there is empty space.
+
+Use Lucide icons sparingly.
+
+Motion
+
+Motion should communicate state or interaction.
+
+Prefer subtle transitions around 150–250ms.
+
+Do not use animation simply to make the page look impressive.
+
+Copywriting
+
+Write like a real hackathon organizer.
+
+Avoid:
+
+- Transform
+- Empower
+- Supercharge
+- Next-gen
+- Seamless
+- Revolutionary
+- Unlock your potential
+- Take your ideas to the next level
+- AI-powered future
+
+Prefer concrete information.
+
+Bad:
+"Transform your ideas into revolutionary solutions."
+
+Good:
+"Build a working prototype in 24 hours."
+
+Important
+
+Before adding a new visual effect, ask whether the effect improves usability.
+
+When uncertain, choose the simpler design.
