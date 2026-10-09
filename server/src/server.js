@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import path from 'path';
+import fs from 'fs';
 import { fileURLToPath } from 'url';
 import authRoutes from './routes/auth.js';
 import statsRoutes from './routes/stats.js';
@@ -69,6 +70,15 @@ app.get('/api/health', (req, res) => {
 app.use('/api/*', (req, res) => {
   res.status(404).json({ message: 'API route not found' });
 });
+
+// Serve static client build if it exists (for production deployment)
+const clientDist = path.resolve(__dirname, '../../client/dist');
+if (fs.existsSync(clientDist)) {
+  app.use(express.static(clientDist));
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(clientDist, 'index.html'));
+  });
+}
 
 // Error handling middleware
 app.use((err, req, res, next) => {

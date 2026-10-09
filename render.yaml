@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: vcanteen
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: npm run install:all && npm run build && npm run seed
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: JWT_SECRET
+        value: vcanteen_super_secret_jwt_key_2026
